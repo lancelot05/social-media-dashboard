@@ -1,0 +1,110 @@
+.featured {
+  margin-top: -6.75rem;
+
+  @include breakpoint-down(medium) {
+    margin-top: -2.8125rem;
+  }
+
+  .flex {
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+  }
+
+  .card {
+    position: relative;
+    height: 13.375rem;
+    width: 15.8125rem;
+    padding: 1.25rem;
+    border-radius: 5px;
+    background-color: var(--card-color);
+    transition: all 300ms ease-in-out;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--card-hover-color);
+      transform: scale(1.05);
+    }
+
+    &__facebook {
+      --bar-color: var(--facebook-color);
+    }
+
+    &__twitter {
+      --bar-color: var(--twitter-color);
+    }
+
+    &__instagram {
+      --bar-color: var(--instagram-color);
+    }
+
+    &__youtube {
+      --bar-color: var(--youtube-color);
+    }
+
+    &::before {
+      position: absolute;
+      width: inherit;
+      content: '';
+      height: 0.1875rem;
+      margin-top: -1.25rem;
+      margin-left: -1.25rem;
+      background: var(--bar-color);
+
+      // @include breakpoint-down(medium) {
+      //   width: 20.6875rem;
+      // }
+    }
+
+    &__username {
+      margin-bottom: 1.875rem;
+      @include breakpoint-down(medium) {
+        flex-direction: row;
+      }
+      &__text {
+        margin-left: 0.5rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: $DarkGrayishBlue;
+      }
+    }
+
+    &__number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.875rem;
+      color: var(--number-color);
+    }
+
+    &__text {
+      font-size: 0.5625rem;
+      color: $DarkGrayishBlue;
+      letter-spacing: 0.3125rem;
+      font-weight: 400;
+      margin-bottom: 1.875rem;
+    }
+
+    &__status {
+      &__text {
+        font-size: 0.625rem;
+        font-weight: 700;
+      }
+      &__up {
+        color: $LimeGreen;
+      }
+      &__down {
+        color: $BrightRed;
+      }
+    }
+  }
+
+  .inner {
+    height: 100%;
+    width: 100%;
+  }
+}

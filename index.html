@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/scss/style.css">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="">
+
+  <header class="header">
+    <div class="container flex flex-jc-sb flex-ai-c">
+      <div class="">
+        <h1>Social Media Dashboard</h1>
+        <h3>Total Followers: 23,004</h3>
+      </div>
+      <hr class="hide_for_desktop">
+      <div class="button flex flex-jc-c flex-ai-c">
+        <h3>Dark Mode</h3>
+        <label class="toggle">
+          <input type="checkbox" name="toggle" id="toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+    
+
+  </header>
+
+  <section class="featured">
+    <div class="container flex flex-jc-sb flex-ai-c">
+      <div class="card card__facebook">
+        <div class="inner flex flex-fd-c flex-ai-c ">
+          <div class="card__username flex flex-ai-c">
+            <img src="/images/icon-facebook.svg" alt="fb">
+            <span class="card__username__text">@nathanf</span>
+          </div>
+          <span class="card__number">1987</span>
+          <span class="card__text">FOLLOWERS</span>
+          <div class="card__status">
+            <img src="/images/icon-up.svg" alt="up">
+            <span class="card__status__text card__status__up">12 Today</span>
+          </div>
+        </div>
+      </div>
+      <div class="card card__twitter">
+        <div class="inner flex flex-fd-c flex-ai-c ">
+          <div class="card__username flex flex-ai-c">
+            <img src="/images/icon-twitter.svg" alt="fb">
+            <span class="card__username__text">@nathanf</span>
+          </div>
+          <span class="card__number">1044</span>
+          <span class="card__text">FOLLOWERS</span>
+          <div class="card__status">
+            <img src="/images/icon-up.svg" alt="up">
+            <span class="card__status__text card__status__up">99 Today</span>
+          </div>
+        </div>
+      </div>
+      <div class="card card__instagram">
+        <div class="inner flex flex-fd-c flex-ai-c ">
+          <div class="card__username flex flex-ai-c">
+            <img src="/images/icon-instagram.svg" alt="fb">
+            <span class="card__username__text">@realnathanf</span>
+          </div>
+          <span class="card__number">11k</span>
+          <span class="card__text">FOLLOWERS</span>
+          <div class="card__status">
+            <img src="/images/icon-up.svg" alt="up">
+            <span class="card__status__text card__status__up">1099 Today</span>
+          </div>
+        </div>
+      </div>
+      <div class="card card__youtube">
+        <div class="inner flex flex-fd-c flex-ai-c ">
+          <div class="card__username flex flex-ai-c">
+            <img src="/images/icon-youtube.svg" alt="fb">
+            <span class="card__username__text">Nathan F.</span>
+          </div>
+          <span class="card__number">8239</span>
+          <span class="card__text">SUBSCRIBERS</span>
+          <div class="card__status">
+            <img src="/images/icon-down.svg" alt="down">
+            <span class="card__status__text card__status__down">144 Today</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="overview">
+    <div class="container">
+
+      <h1>Overview - Today</h1>
+
+      <div class="flex flex-jc-sb flex-ai-c">
+        <div class="card card__facebook">
+          <div class="flex flex-jc-sb flex-ai-c">
+            <h3>Page Views</h3>
+            <img src="/images/icon-facebook.svg" alt="fb">
+          </div>
+          <div class="flex flex-jc-sb flex-ai-e">
+            <span class="card__number">87</span>
+            <div class="card__status">
+              <img src="/images/icon-up.svg" alt="up">
+              <span class="card__status__text card__status__up">3%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card__facebook">
+          <div class="flex flex-jc-sb flex-ai-c">
+            <h3>Likes</h3>
+            <img src="/images/icon-facebook.svg" alt="fb">
+          </div>
+          <div class="flex flex-jc-sb flex-ai-e">
+            <span class="card__number">52</span>
+            <div class="card__status">
+              <img src="/images/icon-down.svg" alt="down">
+              <span class="card__status__text card__status__down">2%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card__instagram">
+          <div class="flex flex-jc-sb flex-ai-c">
+            <h3>Likes</h3>
+            <img src="/images/icon-instagram.svg" alt="fb">
+          </div>
+          <div class="flex flex-jc-sb flex-ai-e">
+            <span class="card__number">5462</span>
+            <div class="card__status">
+              <img src="/images/icon-up.svg" alt="up">
+              <span class="card__status__text card__status__up">2257%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card__instagram">
+          <div class="flex flex-jc-sb flex-ai-c">
+            <h3>Profile Views</h3>
+            <img src="/images/icon-instagram.svg" alt="fb">
+          </div>
+          <div class="flex flex-jc-sb flex-ai-e">
+            <span class="card__number">52k</span>
+            <div class="card__status">
+              <img src="/images/icon-up.svg" alt="up">
+              <span class="card__status__text card__status__up">1375%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex flex-jc-sb flex-ai-c">
+
+        <div class="card card__twitter">
+          <div class="flex flex-jc-sb flex-ai-c">
+            <h3>Retweets</h3>
+            <img src="/images/icon-twitter.svg" alt="fb">
+          </div>
+          <div class="flex flex-jc-sb flex-ai-e">
+            <span class="card__number">117</span>
+            <div class="card__status">
+              <img src="/images/icon-up.svg" alt="up">
+              <span class="card__status__text card__status__up">303%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card__twitter">
+          <div class="flex flex-jc-sb flex-ai-c">
+            <h3>Likes</h3>
+            <img src="/images/icon-twitter.svg" alt="fb">
+          </div>
+          <div class="flex flex-jc-sb flex-ai-e">
+            <span class="card__number">507</span>
+            <div class="card__status">
+              <img src="/images/icon-up.svg" alt="up">
+              <span class="card__status__text card__status__up">553%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card__youtube">
+          <div class="flex flex-jc-sb flex-ai-c">
+            <h3>Likes</h3>
+            <img src="/images/icon-youtube.svg" alt="fb">
+          </div>
+          <div class="flex flex-jc-sb flex-ai-e">
+            <span class="card__number">107</span>
+            <div class="card__status">
+              <img src="/images/icon-down.svg" alt="down">
+              <span class="card__status__text card__status__down">19%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card__youtube">
+          <div class="flex flex-jc-sb flex-ai-c">
+            <h3>Total Views</h3>
+            <img src="/images/icon-youtube.svg" alt="fb">
+          </div>
+          <div class="flex flex-jc-sb flex-ai-e">
+            <span class="card__number">1407</span>
+            <div class="card__status">
+              <img src="/images/icon-down.svg" alt="down">
+              <span class="card__status__text card__status__down">12%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 
+  
+  Page Views
+  87
+  3%
+
+  Likes
+  52
+  2%
+
+  Likes
+  5462
+  2257%
+
+  Profile Views
+  52k
+  1375%
+
+  Retweets
+  117
+  303%
+
+  Likes
+  507
+  553%
+
+  Likes
+  107
+  19%
+
+  Total Views
+  1407
+  12%
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>

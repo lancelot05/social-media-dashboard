@@ -1,0 +1,58 @@
+.overview {
+  margin-top: 3rem;
+
+  h1 {
+    margin-bottom: 0.25rem;
+  }
+
+  @include breakpoint-down(medium) {
+    .flex {
+      flex-direction: column;
+    }
+  }
+
+  .card {
+    margin-top: 1.1875rem;
+    padding: 1.5625rem;
+    height: 7.8125rem;
+    width: 16rem;
+    border-radius: 5px;
+    background-color: var(--card-color);
+    transition: all 300ms ease-in-out;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+      height: 7.875rem;
+      margin-bottom: 0.8125rem;
+      .flex {
+        flex-direction: row;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--card-hover-color);
+      transform: scale(1.05);
+    }
+
+    &__number {
+      margin-top: 1.625rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--number-color);
+    }
+
+    &__status {
+      &__text {
+        font-size: 0.625rem;
+        font-weight: 700;
+      }
+      &__up {
+        color: $LimeGreen;
+      }
+      &__down {
+        color: $BrightRed;
+      }
+    }
+  }
+}

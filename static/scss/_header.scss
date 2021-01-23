@@ -1,0 +1,81 @@
+.header {
+  padding-top: 2.625rem;
+  padding-bottom: 9.625rem;
+  height: 15.25rem;
+  background: var(--bg-header-color);
+
+  @include breakpoint-down(medium) {
+    height: 14.75rem;
+  }
+
+  .flex {
+    @include breakpoint-down(medium) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  .button {
+    @include breakpoint-down(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .hide_for_desktop {
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+
+  hr {
+    background-color: $DarkGrayishBlue;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 3.75rem;
+    height: 2.125rem;
+    margin-left: 1rem;
+
+    input {
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--toggle-color);
+      border-radius: 2.125rem;
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: 1.625rem;
+        width: 1.625rem;
+        left: 4px;
+        bottom: 4px;
+        background-color: var(--slider-color);
+        border-radius: 50%;
+        transition: 300ms;
+      }
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(1.625rem);
+      background-color: var(--slider-color);
+    }
+  }
+}
